@@ -1,0 +1,31 @@
+@echo off
+
+rem === Шаг 1: Создание иерархии папок ===
+echo Создание структуры папок Kotov\Dmitriy и Kotov\Alekseevich
+md Kotov
+cd Kotov
+md Dmitriy
+md Alekseevich
+cd ..
+pause
+
+rem === Шаг 2: Создание файлов ===
+echo Создание файла 20121999.txt в папке Kotov
+echo. > Kotov\20121999.txt
+
+echo Создание файла PC17.txt в папке Kotov\Alekseevich
+echo. > Kotov\Alekseevich\PC17.txt
+pause
+
+rem === Шаг 3: Удаление файлов ===
+echo Удаление файла 20121999.txt из Kotov
+del Kotov\20121999.txt
+
+echo Удаление файла PC17.txt из Kotov\Alekseevich
+del Kotov\Alekseevich\PC17.txt
+pause
+
+rem === Шаг 4: Удаление всей структуры папок ===
+echo Удаление всей папки Kotov со всем содержимым
+rd /S /Q Kotov
+pause
